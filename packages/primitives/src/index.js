@@ -22,3 +22,4 @@ exports.ClipPath = 'CLIP_PATH';
 exports.TextInstance = 'TEXT_INSTANCE';
 exports.LinearGradient = 'LINEAR_GRADIENT';
 exports.RadialGradient = 'RADIAL_GRADIENT';
+exports.Data = 'DATA';

@@ -132,6 +132,19 @@ declare namespace ReactPDF {
    */
   class Image extends React.Component<ImageProps> {}
 
+  interface DataProps {
+    url: string;
+    data: object;
+    renderData?: (props: {
+      data: array;
+    }) => React.ReactNode;
+    children?: React.ReactNode;
+  }
+  /**
+   * A React component for fetching and providing data to its child components.
+   */
+  class Data extends React.Component<DataProps> {}
+
   interface TextProps extends NodeProps {
     id?: string;
     /**

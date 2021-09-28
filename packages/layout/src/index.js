@@ -4,6 +4,7 @@ import asyncCompose from './utils/asyncCompose';
 import resolveSvg from './steps/resolveSvg';
 import resolveZIndex from './steps/resolveZIndex';
 import resolveAssets from './steps/resolveAssets';
+import resolveData from './steps/resolveData';
 import resolveStyles from './steps/resolveStyles';
 import resolveOrigins from './steps/resolveOrigins';
 import resolvePageSizes from './steps/resolvePageSizes';
@@ -28,6 +29,7 @@ const layout = asyncCompose(
   resolveDimensions,
   resolveSvg,
   resolveAssets,
+  resolveData,
   resolveInheritance,
   resolvePercentHeight,
   resolvePagePaddings,
